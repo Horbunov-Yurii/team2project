@@ -1,0 +1,85 @@
+.header {
+    padding-top: 28px;
+
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    &__icon {
+        width: 45px;
+height: 35px;
+
+  @media screen and (min-width: 752px) {
+    width: 752px;
+  }
+
+  @media screen and (min-width: 1200px) {
+       width: 72px;
+    height: 57px;
+    flex-shrink: 0x;
+  }
+    
+    }
+    
+    &__list {
+        display: none;
+        gap: 47px;
+        align-items: center;
+        margin-left: 261px;
+        margin-right: auto;
+
+     @media screen and (min-width: 768px) {
+      display: flex;
+      margin-left: 80px;
+      margin-right: auto;
+      align-items: center;
+      gap: 24px;
+    }
+
+     @media screen and (min-width: 1200px) {
+      gap: 47px;
+      flex-direction: row;
+        margin-left: 261px;
+    }
+    }
+    
+    &__link{
+        color: $title-color;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    }
+    
+    &__img {
+       margin-left: 183px;
+       width: 22px;
+       height: 22px;
+      @media screen and (min-width: 768px) {
+             width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    margin-left: 0;
+  }
+    }
+}
+
+.menu{
+    &__btn {
+         display: flex;
+        background-color: transparent;
+          @media screen and (min-width: 768px) {
+     display: none;
+        background-color: transparent;
+  }
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        margin-left: 14px;
+    }
+}
+
