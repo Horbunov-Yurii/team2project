@@ -1,12 +1,10 @@
 <section class="store">
     <div class="container">
         <h1 class="store__title">STORE</h1>
-        <svg class="store__svg">
-            <use></use>
-        </svg>
+        <div class="store__line"></div>
         <ul class="store__list">
             <li class="store__item">
-                <picture>
+                <picture class="store__picture">
                     <source
                         srcset="../img/dekstop/store_one-dekstop@1x.webp 1x, ../img/dekstop/store_one-dekstop@2x.webp 2x"
                         media="(min-width: 1264px)">
@@ -19,7 +17,7 @@
                     <img src="../img/store_one.jpg" alt="compliments">
                 </picture>
                 <h2 class="item__title">compliments</h2>
-                <svg class="item__svg"></svg>
+                <div class="item__line"></div>
                 <p class="item__text">from $15</p>
             </li>
             <li class="store__item">
@@ -36,7 +34,7 @@
                     <img src="../img/store_two.jpg" alt="bouquets size S">
                 </picture>
                 <h2 class="item__title">bouquets size S</h2>
-                <svg class="item__svg"></svg>
+                <div class="item__line"></div>
                 <p class="item__text">from $25</p>
             </li>
             <li class="store__item">
@@ -53,7 +51,7 @@
                     <img src="../img/store_three.jpg" alt="bouquets size M">
                 </picture>
                 <h2 class="item__title">bouquets size M</h2>
-                <svg class="item__svg"></svg>
+                <div class="item__line"></div>
                 <p class="item__text">from $45</p>
             </li>
             <li class="store__item">
@@ -70,10 +68,12 @@
                     <img src="../img/store_four.jpg" alt="bouquets size L">
                 </picture>
                 <h2 class="item__title">bouquets size L</h2>
-                <svg class="item__svg"></svg>
+                <div class="item__line"></div>
                 <p class="item__text">from $60</p>
             </li>
         </ul>
-        <button type="button">Order flowers</button>
+        <div class="button__wrapper">
+        <button type="button" class="store__button">Order flowers</button>
+    </div>
     </div>
 </section>

@@ -1,40 +1,66 @@
-.store__title{
-    color: #000;
-    font-family: "Montserrat";
-    font-size: 44px;
-    font-weight: 700;
+.store {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    &__title {
+        color: #000;
+        font-family: "Montserrat";
+        font-size: 44px;
+        font-weight: 700;
+        margin-bottom: 80px;
     }
-    
-    .store__svg{
-    width: 1062px;
-    height: 1px;
-    background: #000;
+
+    &__line {
+        width: 1062px;
+        height: 1px;
+        background: #000;
+
     }
-    
-    .store__list{
-    display:flex;
-    gap:32px;
+
+    &__list {
+        display: flex;
+        gap: 32px;
+        flex-wrap: wrap;
     }
-    
-    .item__title{
-    color: #000;
-    font-family: "Montserrat";
-    font-size: 36px;
-    font-weight: 500;
+
+
+    .item__title {
+        color: #000;
+        font-family: "Montserrat";
+        font-size: 36px;
+        font-weight: 500;
     }
-    
-    .item__svg{
-    width: 340px;
-    height: 1px;
-    background: #000;
+
+    .item__line {
+        width: 340px;
+        height: 1px;
+        background: #000;
+        margin-left: 10px;
     }
-    
-    .item__text{
-    color: #000;
-    font-family: "Montserrat";
-    font-size: 28px;
-    font-weight: 600;
-    opacity: 0.6;
+
+    .item__text {
+        color: #000;
+        font-family: "Montserrat";
+        font-size: 28px;
+        font-weight: 600;
+        opacity: 0.6;
     }
-    
-    
+
+    .button__wrapper{
+        text-align: center;
+    }
+
+    &__button {
+        padding: 16px 32px;
+        border-radius: 38px;
+        background: var(--pink, #E86F54);
+        color: #FFF;
+        font-family: "Montserrat";
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 24px;
+        /* 85.714% */
+        margin-top: 80px;
+
+    }
+}
