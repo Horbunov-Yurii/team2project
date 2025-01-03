@@ -59,4 +59,43 @@ a {
 button {
   cursor: pointer;
   border: none;
+}
+
+.store__title {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.store__svg {
+  width: 1062px;
+  height: 1px;
+  background: #000;
+}
+
+.store__list {
+  display: flex;
+  gap: 32px;
+}
+
+.item__title {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.item__svg {
+  width: 340px;
+  height: 1px;
+  background: #000;
+}
+
+.item__text {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 28px;
+  font-weight: 600;
+  opacity: 0.6;
 }/*# sourceMappingURL=main.css.map */
