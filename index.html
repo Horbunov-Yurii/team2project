@@ -10,8 +10,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <script type="module" crossorigin src="/project-name/assets/index-c2a82f55.js"></script>
-    <link rel="stylesheet" href="/project-name/assets/index-a058cb63.css">
+    <script type="module" crossorigin src="/project-name/assets/index-afa856b1.js"></script>
+    <link rel="stylesheet" href="/project-name/assets/index-2fd6885e.css">
   </head>
   <body>
     
@@ -37,12 +37,10 @@ studio</p></li>
     <section class="store">
     <div class="container">
         <h1 class="store__title">STORE</h1>
-        <svg class="store__svg">
-            <use></use>
-        </svg>
+        <div class="store__line"></div>
         <ul class="store__list">
             <li class="store__item">
-                <picture>
+                <picture class="store__picture">
                     <source
                         srcset="../img/dekstop/store_one-dekstop@1x.webp 1x, ../img/dekstop/store_one-dekstop@2x.webp 2x"
                         media="(min-width: 1264px)">
@@ -55,7 +53,7 @@ studio</p></li>
                     <img src="../img/store_one.jpg" alt="compliments">
                 </picture>
                 <h2 class="item__title">compliments</h2>
-                <svg class="item__svg"></svg>
+                <div class="item__line"></div>
                 <p class="item__text">from $15</p>
             </li>
             <li class="store__item">
@@ -72,7 +70,7 @@ studio</p></li>
                     <img src="../img/store_two.jpg" alt="bouquets size S">
                 </picture>
                 <h2 class="item__title">bouquets size S</h2>
-                <svg class="item__svg"></svg>
+                <div class="item__line"></div>
                 <p class="item__text">from $25</p>
             </li>
             <li class="store__item">
@@ -89,7 +87,7 @@ studio</p></li>
                     <img src="../img/store_three.jpg" alt="bouquets size M">
                 </picture>
                 <h2 class="item__title">bouquets size M</h2>
-                <svg class="item__svg"></svg>
+                <div class="item__line"></div>
                 <p class="item__text">from $45</p>
             </li>
             <li class="store__item">
@@ -106,14 +104,17 @@ studio</p></li>
                     <img src="../img/store_four.jpg" alt="bouquets size L">
                 </picture>
                 <h2 class="item__title">bouquets size L</h2>
-                <svg class="item__svg"></svg>
+                <div class="item__line"></div>
                 <p class="item__text">from $60</p>
             </li>
         </ul>
-        <button type="button">Order flowers</button>
+        <div class="button__wrapper">
+        <button type="button" class="store__button">Order flowers</button>
+    </div>
     </div>
 </section>
     <section class="delivery">
+    <div class="container">
     <h1 class="delivery__title">DELIVERY</h1>
     <svg class="delivery__svg">
         <use></use>
@@ -121,23 +122,24 @@ studio</p></li>
     <ul class="delivery__list">
         <li class="delivery__item">
             <p class="delivery__text">1</p>
-            <p class="item__text">Choose your bouquet and make an order on website</p>
+            <p class="items__text">Choose your bouquet and make an order on website</p>
         </li>
         <li class="delivery__item">
             <p class="delivery__text">2</p>
-            <p class="item__text">Wait for the call to clarify the details of the order.
+            <p class="items__text">Wait for the call to clarify the details of the order.
                 You can pay online or to the courier</p>
         </li>
         <li class="delivery__item">
             <p class="delivery__text">3</p>
-            <p class="item__text">Wait for the delivery at the selected time or pick up
+            <p class="items__text">Wait for the delivery at the selected time or pick up
                 the order from the store</p>
         </li>
         <li class="delivery__item">
             <p class="delivery__text">4</p>
-            <p class="item__text">Make someone happy or enjoy yourself</p>
+            <p class="items__text">Make someone happy or enjoy yourself</p>
         </li>
     </ul>
+</div>
 </section>
     <section class="blog">
 <h1 class="blog__tittle">BLOG</h1>
