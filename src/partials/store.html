@@ -1,20 +1,79 @@
 <section class="store">
-    <h1 class="store__title">STORE</h1>
-    <svg class="store__svg">
-        <use></use>
-    </svg>
-    <ul class="store__list">
-        <li class="store__item">
-            <source src="">  
-            <h1 class="item__title">compliments</h1>
-            <svg class="item__svg">
-                <use></use>
-            </svg>
-            <p class="store-text">from $15</p>  
-        </li>
-        <li class="store__item">
-        </li>
-        <li class="store__item"></li>
-        <li class="store__item"></li>
-    </ul>
+    <div class="container">
+        <h1 class="store__title">STORE</h1>
+        <svg class="store__svg">
+            <use></use>
+        </svg>
+        <ul class="store__list">
+            <li class="store__item">
+                <picture>
+                    <source
+                        srcset="../img/dekstop/store_one-dekstop@1x.webp 1x, ../img/dekstop/store_one-dekstop@2x.webp 2x"
+                        media="(min-width: 1264px)">
+                    <source
+                        srcset="../img/tablet/store_one-tablet@1x.webp 1x, ../img/tablet/store_one-tablet@2x.webp 2x"
+                        media="(min-width: 752px)">
+                    <source
+                        srcset="../img/mobile/store_one-mobile@1x.webp 1x, ../img/mobile/store_one-mobile@2x.webp 2x"
+                        media="(max-width: 480px)">
+                    <img src="../img/store_one.jpg" alt="compliments">
+                </picture>
+                <h2 class="item__title">compliments</h2>
+                <svg class="item__svg"></svg>
+                <p class="item__text">from $15</p>
+            </li>
+            <li class="store__item">
+                <picture>
+                    <source
+                        srcset="../img/dekstop/store_two-dekstop@1x.webp 1x, ../img/dekstop/store_two-dekstop@2x (2).webp 2x"
+                        media="(min-width: 1264px)">
+                    <source
+                        srcset="../img/tablet/store_two-tablet@1x.webp 1x, ../img/tablet/store_two-tablet@2x.webp 2x"
+                        media="(min-width: 752px)">
+                    <source
+                        srcset="../img/mobile/store_two-mobile@1x.webp 1x, ../img/mobile/store_two-mobile@2x.webp 2x"
+                        media="(max-width: 480px)">
+                    <img src="../img/store_two.jpg" alt="bouquets size S">
+                </picture>
+                <h2 class="item__title">bouquets size S</h2>
+                <svg class="item__svg"></svg>
+                <p class="item__text">from $25</p>
+            </li>
+            <li class="store__item">
+                <picture>
+                    <source
+                        srcset="../img/dekstop/store_three-dekstop@1x.webp 1x, ../img/dekstop/store_three-dekstop@2x.webp 2x"
+                        media="(min-width: 1264px)">
+                    <source
+                        srcset="../img/tablet/store_three-tablet@1x.webp 1x, ../img/tablet/store_three-tablet@2x.webp 2x"
+                        media="(min-width: 752px)">
+                    <source
+                        srcset="../img/mobile/store_three-mobile@1x.webp 1x, ../img/mobile/store_three-mobile@2x.webp 2x"
+                        media="(max-width: 480px)">
+                    <img src="../img/store_three.jpg" alt="bouquets size M">
+                </picture>
+                <h2 class="item__title">bouquets size M</h2>
+                <svg class="item__svg"></svg>
+                <p class="item__text">from $45</p>
+            </li>
+            <li class="store__item">
+                <picture>
+                    <source
+                        srcset="../img/dekstop/store_four-dekstop@1x.webp 1x, ../img/dekstop/store_four-dekstop@2x.webp 2x"
+                        media="(min-width: 1264px)">
+                    <source
+                        srcset="../img/tablet/store_four-tablet@1x.webp 1x, ../img/tablet/store_four-tablet@2x.webp 2x"
+                        media="(min-width: 752px)">
+                    <source
+                        srcset="../img/mobile/store_four-mobile@1x.webp 1x, ../img/mobile/store_four-mobile@2x.webp 2x"
+                        media="(max-width: 480px)">
+                    <img src="../img/store_four.jpg" alt="bouquets size L">
+                </picture>
+                <h2 class="item__title">bouquets size L</h2>
+                <svg class="item__svg"></svg>
+                <p class="item__text">from $60</p>
+            </li>
+        </ul>
+        <button type="button">Order flowers</button>
+    </div>
 </section>
