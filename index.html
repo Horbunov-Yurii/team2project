@@ -8,14 +8,55 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <script type="module" crossorigin src="/project-name/assets/index-afa856b1.js"></script>
-    <link rel="stylesheet" href="/project-name/assets/index-2fd6885e.css">
+    <script type="module" crossorigin src="/project-name/assets/index-54d3fac8.js"></script>
+    <link rel="stylesheet" href="/project-name/assets/index-6d520818.css">
   </head>
   <body>
-    
-    <section class="hero">
+     <header class="header">
+        <div class="container header__box">
+            <a href="./index.html" class="header__logo">
+                <svg class="header__icon">
+                    <use href="/project-name/assets/symbol-defs-f110cf7f.svg#icon-logo"></use>
+                </svg>
+            </a>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item"><a href="#" class="header__link">Anemone</a></li>
+                <li class="header__item"><a href="#" class="header__link">About us</a></li>
+                <li class="header__item"><a href="#" class="header__link">Store</a></li>
+                <li class="header__item"><a href="#" class="header__link">Delivery</a></li>
+                <li class="header__item"><a href="#" class="header__link">Blog</a></li>
+            </ul>
+            </nav>
+            <a href="tel:+380961111111" class="header__phone">
+                <svg class="header__img">
+                    <use href="/project-name/assets/symbol-defs-f110cf7f.svg#icon-phone"></use>
+                </svg>
+            </a>
+            <button type="button" class="header__button" modal-header-open>
+        <svg class="header__eacon">
+        <use href="/project-name/assets/symbol-defs-f110cf7f.svg#icon-menu"></use>
+        </svg>
+        </button>
+             <div class="menu is-hidden" header-modal>
+          <button type="button" class="menu__btn" modal-header-close><svg class="menu__icon">
+            <use href="/project-name/assets/symbol-defs-f110cf7f.svg#icon-dagger"></use>
+          </svg></button>
+          <nav class="menu-nav">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="#" class="menu__link">Anemone</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">About us</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Store</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Delivery</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+          </ul>
+          </nav>
+        </div>
+        </div>
+    </header>
+        <section class="hero">
         <div class="container hero__bax">
                 <h1 class="hero__title">
                 ANEMONE
@@ -23,8 +64,8 @@
             <ul class="hero__list">
                 <li class="hero__item hero__pozi"><p class="hero__text">flower
 studio</p></li>
-                <li class="hero__item hero__gol"><img src="../img/hero.jpg" alt="hero-fons" class="hero__img"></li>
-                <li class="hero__item"><img src="../img/hiro.jpg" alt="hiro-fons" class="hero__eamg"></li>
+                <li class="hero__item hero__gol"><img src="/project-name/assets/hero-b2d6352c.jpg" alt="hero-fons" class="hero__img"></li>
+                <li class="hero__item"><img src="/project-name/assets/hiro-944b1ec4.jpg" alt="hiro-fons" class="hero__eamg"></li>
             </ul>
              
         </div>
@@ -181,5 +222,6 @@ studio</p></li>
 </svg>
 </footer>
     
+     <script src="./js/modal-header.js"></script>
   </body>
 </html>
