@@ -4,18 +4,21 @@ body {
 
 .container {
   max-width: 1264px;
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-right: 8px;
+  padding-left: 8px;
   margin: 0 auto;
+  outline: 1px solid red;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 304px) {
   .container {
-    width: 480px;
+    width: 304px;
   }
 }
 @media screen and (min-width: 752px) {
   .container {
     width: 752px;
+    padding-right: 16px;
+    padding-left: 16px;
   }
 }
 @media screen and (min-width: 1264px) {
@@ -59,6 +62,239 @@ a {
 button {
   cursor: pointer;
   border: none;
+}
+
+.header {
+  padding-top: 16px;
+}
+@media screen and (min-width: 752px) {
+  .header {
+    padding-top: 24px;
+  }
+}
+@media screen and (min-width: 1264px) {
+  .header {
+    padding-top: 28px;
+  }
+}
+.header__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__logo {
+  margin-right: auto;
+}
+.header__icon {
+  width: 45px;
+  height: 35px;
+}
+@media screen and (min-width: 752px) {
+  .header__icon {
+    width: 72px;
+    height: 57px;
+  }
+}
+.header__list {
+  display: none;
+}
+@media screen and (min-width: 752px) {
+  .header__list {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1264px) {
+  .header__list {
+    gap: 48px;
+  }
+}
+.header__link {
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.header__img {
+  width: 22px;
+  height: 22px;
+}
+@media screen and (min-width: 752px) {
+  .header__img {
+    width: 24px;
+    height: 24px;
+    margin-left: 75px;
+  }
+}
+@media screen and (min-width: 1264px) {
+  .header__img {
+    width: 28px;
+    height: 28px;
+    margin-left: 306px;
+  }
+}
+.header__button {
+  background: none;
+  border: transparent;
+  margin-left: 14px;
+}
+@media screen and (min-width: 752px) {
+  .header__button {
+    display: none;
+  }
+}
+.header__eacon {
+  width: 24px;
+  height: 24px;
+  fill: #000;
+}
+.header .menu {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: #E86F54;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+  opacity: 1;
+  padding-top: 124px;
+  padding-bottom: 180px;
+  z-index: 1;
+}
+.header .menu__btn {
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.header .menu.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+}
+.header .menu__icon {
+  width: 24px;
+  height: 24px;
+  fill: #FFF;
+}
+.header .menu__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+}
+.header .menu__link {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.hero {
+  padding-top: 44px;
+  padding-bottom: 100px;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 38px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 64px;
+  }
+}
+.hero__bax {
+  position: relative;
+}
+.hero__title {
+  color: #000;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 1.2;
+  position: absolute;
+  top: 247px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (min-width: 752px) {
+  .hero__title {
+    font-size: 120px;
+    top: 584px;
+  }
+}
+@media screen and (min-width: 1264px) {
+  .hero__title {
+    font-size: 160px;
+    top: 534px;
+  }
+}
+.hero__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 752px) {
+  .hero__list {
+    justify-content: right;
+  }
+}
+@media screen and (min-width: 1264px) {
+  .hero__list {
+    justify-content: center;
+  }
+}
+.hero__text {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  width: 46px;
+  margin-right: 14px;
+}
+@media screen and (min-width: 752px) {
+  .hero__text {
+    font-size: 24px;
+    width: 76px;
+    margin-right: 40px;
+  }
+}
+@media screen and (min-width: 1264px) {
+  .hero__text {
+    font-size: 32px;
+    width: 101px;
+    margin-right: 170px;
+  }
+}
+.hero__img {
+  width: 145px;
+  height: 274px;
+}
+@media screen and (min-width: 752px) {
+  .hero__img {
+    width: 390px;
+    height: 636px;
+  }
+}
+.hero__eamg {
+  width: 64px;
+  height: 64px;
+  margin-left: 8px;
+}
+@media screen and (min-width: 752px) {
+  .hero__eamg {
+    width: 145px;
+    height: 150px;
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 1264px) {
+  .hero__eamg {
+    width: 166px;
+    height: 166px;
+    margin-left: 110px;
+  }
 }
 
 .store {
