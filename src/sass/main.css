@@ -353,22 +353,27 @@ button {
   margin-top: 80px;
 }
 
+.delivery {
+  padding-bottom: 100px;
+}
+
 .delivery__title {
   color: #000;
   font-family: "Montserrat";
   font-size: 44px;
   font-weight: 700;
+  margin-bottom: 80px;
+  display: inline;
 }
 
-.delivery__svg {
+.delivery__line {
   width: 985px;
   height: 1px;
   background: #000;
 }
 
-.delivery__list {
-  display: flex;
-  flex-direction: column;
+.delivery__item {
+  margin-bottom: 57px;
 }
 
 .delivery__text {
@@ -376,7 +381,11 @@ button {
   font-family: "Montserrat";
   font-size: 26px;
   font-weight: 500;
+  display: inline;
   margin-right: 56px;
+  padding: 16px 27px;
+  border: 2px solid #000;
+  border-radius: 50%;
 }
 
 .items__text {
@@ -384,5 +393,5 @@ button {
   font-family: "Montserrat";
   font-size: 32px;
   font-weight: 500;
-  margin-bottom: 57px;
+  display: inline;
 }/*# sourceMappingURL=main.css.map */
