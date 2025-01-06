@@ -1,66 +1,170 @@
 .store {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 752px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    @media screen and (min-width: 1264px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 
     &__title {
         color: #000;
         font-family: "Montserrat";
-        font-size: 44px;
+        font-size: 24px;
         font-weight: 700;
-        margin-bottom: 80px;
+        margin-bottom: 32px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        @media screen and (min-width: 752px) {
+            font-size: 44px;
+            font-weight: 700;
+            margin-bottom: 60px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        @media screen and (min-width: 1264px) {
+            font-size: 44px;
+            font-weight: 700;
+            margin-bottom: 80px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
     }
 
-    &__line {
-        width: 1062px;
-        height: 1px;
-        background: #000;
+    &__title::after {
 
+        @media screen and (min-width: 752px) {
+            width: 550px;
+            height: 1px;
+            content: "";
+            background: #000;
+            display: block;
+        }
+
+        @media screen and (min-width: 1264px) {
+            content: "";
+            width: 1062px;
+            height: 1px;
+            background: #000;
+            display: block;
+        }
     }
 
     &__list {
         display: flex;
-        gap: 32px;
+        gap: 16px;
         flex-wrap: wrap;
+
+        @media screen and (min-width: 752px) {
+            gap: 32px;
+        }
+
+        @media screen and (min-width: 1264px) {
+            gap: 32px;
+        }
     }
 
+    &__item {
+        flex-basis: calc((100% - 32px) / 2);
+
+        @media screen and (min-width: 752px) {
+            flex-basis: calc((100% - 64px) / 2);
+        }
+
+        @media screen and (min-width: 1264px) {
+            flex-basis: calc((100% - 64px) / 2);
+        }
+    }
 
     .item__title {
         color: #000;
         font-family: "Montserrat";
-        font-size: 36px;
+        font-size: 16px;
         font-weight: 500;
+
+        @media screen and (min-width: 752px) {
+            font-size: 32px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+        }
+
+        @media screen and (min-width: 1264px) {
+            font-size: 36px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+        }
     }
 
-    .item__line {
-        width: 340px;
-        height: 1px;
-        background: #000;
-        margin-left: 10px;
+    .item__title::after {
+
+        @media screen and (min-width: 752px) {
+            content: "";
+            width: 119px;
+            height: 1px;
+            background: #000;
+            display: block;
+            margin-left: 16px;
+        }
+
+        @media screen and (min-width: 1264px) {
+            content: "";
+            width: 286px;
+            height: 1px;
+            background: #000;
+            display: block;
+            margin-left: 16px;
+        }
     }
 
     .item__text {
         color: #000;
         font-family: "Montserrat";
-        font-size: 28px;
+        font-size: 12px;
         font-weight: 600;
         opacity: 0.6;
+
+        @media screen and (min-width: 752px) {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        @media screen and (min-width: 1264px) {
+            font-size: 28px;
+            font-weight: 600;
+        }
     }
 
-    .button__wrapper{
+    .button__wrapper {
         text-align: center;
     }
 
     &__button {
-        padding: 16px 32px;
-        border-radius: 38px;
-        background: var(--pink, #E86F54);
         color: #FFF;
-        font-family: "Montserrat";
-        font-size: 28px;
+        font-size: 20px;
         font-weight: 500;
-        line-height: 24px;
-        /* 85.714% */
-        margin-top: 80px;
+        line-height: 1.2; 
+        background-color: #E86F54;
+        border-radius: 38px;
+        padding: 10px 35px;
+        margin-top: 32px;
+        
+        @media screen and (min-width: 752px) {
+        font-size: 28px;
+        padding: 20px 43px;
+        margin-top: 60px;
+        }
 
     }
 }

@@ -1,29 +1,30 @@
-.delivery{
+.delivery {
     padding-bottom: 100px;
 }
+
 .delivery__title {
     color: #000;
     font-family: "Montserrat";
     font-size: 44px;
     font-weight: 700;
-    margin-bottom: 80px;
-    display: inline;
+    margin-bottom: 91px;
+    display: flex;
+    align-items: center;
 }
 
-.delivery__line {
+.delivery__title::after {
+    content: "";
     width: 985px;
     height: 1px;
     background: #000;
-
+    display: inline-block
 }
 
-.delivery__list {
-   
-}
-
-.delivery__item{
+.delivery__item {
     margin-bottom: 57px;
-    
+    display: flex;
+    gap: 56px;
+    align-items: center;
 }
 
 .delivery__text {
@@ -31,11 +32,14 @@
     font-family: "Montserrat";
     font-size: 26px;
     font-weight: 500;
-    display: inline;
-    margin-right: 56px;
-    padding: 16px 27px;
     border: 2px solid #000;
     border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .items__text {
@@ -43,6 +47,5 @@
     font-family: "Montserrat";
     font-size: 32px;
     font-weight: 500;
-    display: inline;
-
+    width: 855px;
 }
