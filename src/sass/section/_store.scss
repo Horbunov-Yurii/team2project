@@ -1,66 +1,220 @@
 .store {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 752px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    @media screen and (min-width: 1264px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 32px;
+
+        @media screen and (min-width: 752px) {
+            gap: 16px;
+            margin-bottom: 60px;
+        }
+
+        @media screen and (min-width: 1264px) {
+            margin-bottom: 80px;
+
+        }
+    }
 
     &__title {
-        color: #000;
-        font-family: "Montserrat";
-        font-size: 44px;
+        color: $title-color;
+        font-size: 24px;
         font-weight: 700;
-        margin-bottom: 80px;
+        line-height: 1.2;
+
+        @media screen and (min-width: 752px) {
+            font-size: 44px;
+        }
+
+        @media screen and (min-width: 1264px) {
+            font-size: 44px;
+        }
     }
 
     &__line {
+        background-color: $title-color;
         width: 1062px;
         height: 1px;
-        background: #000;
-
     }
 
     &__list {
         display: flex;
-        gap: 32px;
+        gap: 16px;
         flex-wrap: wrap;
+
+        @media screen and (min-width: 752px) {
+            gap: 32px;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (min-width: 1264px) {
+            gap: 32px;
+        }
     }
 
 
-    .item__title {
-        color: #000;
-        font-family: "Montserrat";
-        font-size: 36px;
+    &__img {
+
+        width: 136px;
+        height: 155px;
+
+        @media screen and (min-width: 752px) {
+            width: 344px;
+            height: 399px;
+        }
+
+        @media screen and (min-width: 1264px) {
+            width: 600px;
+            height: 542px;
+        }
+    }
+
+    &__bax {
+
+
+        @media screen and (min-width: 752px) {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        @media screen and (min-width: 1264px) {
+            gap: 16px;
+        }
+    }
+
+    &__lline {
+        display: none;
+
+        @media screen and (min-width: 752px) {
+            display: flex;
+            background: $title-color;
+            width: 119px;
+            height: 1px;
+        }
+
+        @media screen and (min-width: 1264px) {
+            width: 340px;
+        }
+    }
+
+    &__llines {
+        display: none;
+
+        @media screen and (min-width: 752px) {
+            width: 80px;
+            height: 1px;
+            background: $title-color;
+            display: flex;
+        }
+
+        @media screen and (min-width: 1264px) {
+            width: 298px;
+        }
+    }
+
+    &__llineu {
+        display: none;
+
+        @media screen and (min-width: 752px) {
+            width: 71px;
+            height: 1px;
+            background: $title-color;
+            display: flex;
+        }
+
+        @media screen and (min-width: 1264px) {
+            width: 286px;
+        }
+    }
+
+    &__llinef {
+        display: none;
+
+        @media screen and (min-width: 752px) {
+            width: 81px;
+            height: 1px;
+            background: $title-color;
+            display: flex;
+        }
+
+        @media screen and (min-width: 1264px) {
+            width: 298px;
+        }
+    }
+
+    &__paragraph {
+        color: $title-color;
+        font-size: 16px;
         font-weight: 500;
+
+        @media screen and (min-width: 752px) {
+            font-size: 32px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+        }
+
+        @media screen and (min-width: 1264px) {
+            font-size: 36px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+        }
     }
 
-    .item__line {
-        width: 340px;
-        height: 1px;
-        background: #000;
-        margin-left: 10px;
-    }
 
-    .item__text {
-        color: #000;
-        font-family: "Montserrat";
-        font-size: 28px;
+
+    &__text {
+        color: $title-color;
+        font-size: 12px;
         font-weight: 600;
         opacity: 0.6;
+
+        @media screen and (min-width: 752px) {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        @media screen and (min-width: 1264px) {
+            font-size: 28px;
+            font-weight: 600;
+        }
     }
 
-    .button__wrapper{
+    .button__wrapper {
         text-align: center;
     }
 
     &__button {
-        padding: 16px 32px;
-        border-radius: 38px;
-        background: var(--pink, #E86F54);
-        color: #FFF;
-        font-family: "Montserrat";
-        font-size: 28px;
+        color: $text-color;
+        font-size: 20px;
         font-weight: 500;
-        line-height: 24px;
-        /* 85.714% */
-        margin-top: 80px;
+        line-height: 1.2;
+        background-color: $menu-color;
+        border-radius: 38px;
+        padding: 10px 35px;
+        margin-top: 32px;
+
+        @media screen and (min-width: 752px) {
+            font-size: 28px;
+            padding: 20px 43px;
+            margin-top: 60px;
+        }
 
     }
 }
+
