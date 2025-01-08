@@ -1,0 +1,125 @@
+.footer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: $title-color;
+  @media screen and (min-width: 752px) {
+    padding-top: 60px;
+    padding-bottom: 54px;
+  }
+
+  @media screen and (min-width: 1264px) {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  &__logo {
+    display: none;
+    @media screen and (min-width: 1264px) {
+      display: flex;
+      width: 73px;
+      height: 57px;
+      fill: $text-color;
+      margin-right: 210px;
+    }
+  }
+  &__title {
+    color: $text-color;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 6px;
+
+    @media screen and (min-width: 752px) {
+      font-size: 20px;
+    }
+  }
+  &__link {
+    color: $text-color;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+
+    @media screen and (min-width: 752px) {
+      font-size: 16px;
+    }
+  }
+&__eatem{
+    width: 97px;
+}
+&__img{
+    fill: $text-color;
+    width: 28px;
+    height: 28px;
+}
+&__list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  &__lisst{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+      @media screen and (min-width: 752px) {
+         flex-direction: column;
+  }
+  }
+  &__box{
+    display: flex;
+    gap: 44px;
+    margin-bottom: 32px;
+
+          @media screen and (min-width: 752px) {
+            margin-bottom: 0;
+  }
+
+     @media screen and (min-width: 1264px) {
+    gap: 96px;
+  }
+  }
+  &__bax{
+    display: flex;
+    gap: 32px;
+      @media screen and (min-width: 752px) {
+        margin-left: 44px;
+        gap: 65px;
+  }
+
+  @media screen and (min-width: 1264px) {
+    gap: 209px;
+    margin-left: 96px;
+  }
+  }
+
+  &__bux{
+ display: flex;
+ flex-wrap: wrap;
+  }
+
+  &__eetem {
+    word-break: break-all;
+  width: 120px;
+    @media screen and (min-width: 752px) {
+        width: 239px;
+  }
+  }
+
+  &__itemss{
+    width: 128px;
+      @media screen and (min-width: 752px) {
+        width: 147px;
+  }
+  }
+}
+
+@media screen and (min-width: 752px) {
+}
+
+@media screen and (min-width: 1264px) {
+} 

@@ -752,6 +752,139 @@ button {
   align-items: center;
 }
 
+.footer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: #000;
+}
+@media screen and (min-width: 752px) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 54px;
+  }
+}
+@media screen and (min-width: 1264px) {
+  .footer {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+}
+.footer__logo {
+  display: none;
+}
+@media screen and (min-width: 1264px) {
+  .footer__logo {
+    display: flex;
+    width: 73px;
+    height: 57px;
+    fill: #FFF;
+    margin-right: 210px;
+  }
+}
+.footer__title {
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+@media screen and (min-width: 752px) {
+  .footer__title {
+    font-size: 20px;
+  }
+}
+.footer__link {
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+}
+@media screen and (min-width: 752px) {
+  .footer__link {
+    font-size: 16px;
+  }
+}
+.footer__eatem {
+  width: 97px;
+}
+.footer__img {
+  fill: #FFF;
+  width: 28px;
+  height: 28px;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.footer__lisst {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+@media screen and (min-width: 752px) {
+  .footer__lisst {
+    flex-direction: column;
+  }
+}
+.footer__box {
+  display: flex;
+  gap: 44px;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 752px) {
+  .footer__box {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1264px) {
+  .footer__box {
+    gap: 96px;
+  }
+}
+.footer__bax {
+  display: flex;
+  gap: 32px;
+}
+@media screen and (min-width: 752px) {
+  .footer__bax {
+    margin-left: 44px;
+    gap: 65px;
+  }
+}
+@media screen and (min-width: 1264px) {
+  .footer__bax {
+    gap: 209px;
+    margin-left: 96px;
+  }
+}
+.footer__bux {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__eetem {
+  word-break: break-all;
+  width: 120px;
+}
+@media screen and (min-width: 752px) {
+  .footer__eetem {
+    width: 239px;
+  }
+}
+.footer__itemss {
+  width: 128px;
+}
+@media screen and (min-width: 752px) {
+  .footer__itemss {
+    width: 147px;
+  }
+}
+
 .backdrop {
   position: fixed;
   top: 0;
