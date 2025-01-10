@@ -1,20 +1,29 @@
-<div class="backdrop is__hidden">
-    <div class="modal crate">
-        <div class="modal__box">
-            <img src="" alt="" class="modal__img">
-        </div>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal modal__box" >
+        <button class="modal__btn" data-modal-close>
+            <svg class="modal__svg">
+                <use href="../img/symbol-defs.svg#icon-dagger"></use>
+            </svg>
+        </button>
+        <picture>
+            <source srcset="./img/dekstop/modal-dekstop@2x.webp 2x, ./img/dekstop/modal-dekstop@1x.webp 1x"
+                media="(min-width: 1264px)">
+            <source srcset="./img/tablet/modal-tablet@2x.webp 2x, ./img/tablet/modal-tablet@1x.webp 1x"
+                media="(min-width: 752px)">
+            <source srcset="./img/mobile/modal-mobile@2x.webp 2x, ./img/mobile/modal-mobile@1x.webp 1x"
+                media="(max-width: 752px)">
+            <img src="./img/modal.jpg" alt="modal-fons" class="modal__img">
+        </picture>
         <div class="modal__bax">
             <h1 class="modal__title">Follow to our newsletter</h1>
             <p class="modal__text">Be the first to get exclusive offers and the latest news on our product directly in
                 your box.</p>
             <form action="" class="modal__form">
-                <label for="" class="modal__label">
+                <label class="modal__label">
                     Email
                     <input type="email" placeholder="Your email" class="modal__input">
                 </label>
-                <label for="" class="modal__label">
-                    <button type="submit" class="modal__button">Subscribe</button>
-                </label>
+                <button type="submit" class="modal__button">Subscribe</button>
             </form>
         </div>
     </div>
