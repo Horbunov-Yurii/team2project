@@ -565,6 +565,37 @@ button {
 
 .delivery {
   padding-bottom: 100px;
+  background-image: url("../../img/mobile/delivery-mobile@1x.webp");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .delivery {
+    background-image: url("../../img/mobile/delivery-mobile@2x.webp");
+  }
+}
+@media screen and (min-width: 752px) {
+  .delivery {
+    background-image: url("../../img/tablet/delivery-tablet@1x.webp");
+  }
+}
+@media screen and (min-width: 752px) and (min-device-pixel-ratio: 2), screen and (min-width: 752px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 752px) and (min-resolution: 192dpi), screen and (min-width: 752px) and (min-resolution: 2dppx) {
+  .delivery {
+    background-image: url("../../img/tablet/delivery-tablet@2x.webp");
+  }
+}
+@media screen and (min-width: 1264px) {
+  .delivery {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: url("../../img/dekstop/delivery-dekstop@1x.webp");
+  }
+}
+@media screen and (min-width: 1264px) and (min-device-pixel-ratio: 2), screen and (min-width: 1264px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1264px) and (min-resolution: 192dpi), screen and (min-width: 1264px) and (min-resolution: 2dppx) {
+  .delivery {
+    background-image: url("../../img/dekstop/delivery-dekstop@2x.webp");
+  }
 }
 .delivery__box {
   display: flex;
