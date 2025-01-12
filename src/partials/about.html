@@ -2,11 +2,34 @@
     <div class="container">
     <div class="about__div">
 <h2 class="about__tittle">ABOUT</h2>
-<div class="line"></div>
+<div class="about__line"></div>
     </div>
     <div class="about__dd">
 <p class="about__text">We are a minimalistic flower studio. We love people and flowers. Therefore, every day we give people the beauty and joy creating stylish and modern masterpieces. Every bouquet we create is unique as you are.</p>
-<img class="about__img" src="../img/about.jpg" alt="about">
+<picture>
+    <source
+      srcset="
+        ./img/dekstop/about-dekstop@2x.webp 2x,
+        ./img/dekstop/about-dekstop@1x.webp 1x
+      "
+      media="(min-width: 1264px)"
+    />
+    <source
+      srcset="
+        ./img/tablet/about-tablet@2x.webp 2x,
+        ./img/tablet/about-tablet@1x.webp 1x
+      "
+      media="(min-width: 752px)"
+    />
+<source
+      srcset="
+        ./img/mobile/about-mobile@2x.webp 2x,
+        ./img/mobile/about-mobile@1x.webp 1x
+      "
+      media="(max-width: 752px)"
+    />
+    <img src="./img/about.jpg" alt="about" class="abaut__img" />
+  </picture>
 </div>
 </div>
 </section>
