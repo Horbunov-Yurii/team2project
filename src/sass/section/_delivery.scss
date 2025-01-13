@@ -1,40 +1,5 @@
 .delivery {
     padding-bottom: 100px;
-    background-image: url('../../img/mobile/delivery-mobile@1x.webp');
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
-  
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      background-image: url('../../img/mobile/delivery-mobile@2x.webp');
-    }
-  
-    @media screen and (min-width: 752px) {
-      background-image: url('../../img/tablet/delivery-tablet@1x.webp');
-  
-      @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-        background-image: url('../../img/tablet/delivery-tablet@2x.webp');
-      }
-    }
-  
-    @media screen and (min-width: 1264px) {
-      padding-top: 200px;
-      padding-bottom: 200px;
-      background-image: url('../../img/dekstop/delivery-dekstop@1x.webp');
-  
-      @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-        background-image: url('../../img/dekstop/delivery-dekstop@2x.webp');
-      }
-    }
 
     &__box {
         display: flex;
@@ -77,16 +42,13 @@
         display: flex;
         flex-direction: column;
         gap: 19px;
-        margin-bottom: 32px;
 
         @media screen and (min-width: 752px) {
             gap: 20px;
-            margin-bottom: 40px;
         }
 
         @media screen and (min-width: 1264px) {
             gap: 52px;
-            margin-bottom: 69px;
             align-items: center;
         }
     }

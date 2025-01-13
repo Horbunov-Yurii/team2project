@@ -1,7 +1,7 @@
 .store {
     padding-top: 60px;
     padding-bottom: 60px;
-
+    
     @media screen and (min-width: 752px) {
         padding-top: 100px;
         padding-bottom: 100px;
@@ -84,7 +84,6 @@
 
     &__bax {
 
-
         @media screen and (min-width: 752px) {
             display: flex;
             align-items: center;
@@ -98,7 +97,7 @@
 
     &__lline {
         display: none;
-
+        margin-top: 16px;
         @media screen and (min-width: 752px) {
             display: flex;
             background: $title-color;
@@ -113,7 +112,7 @@
 
     &__llines {
         display: none;
-
+        margin-top: 16px;
         @media screen and (min-width: 752px) {
             width: 80px;
             height: 1px;
@@ -128,12 +127,13 @@
 
     &__llineu {
         display: none;
-
+        
         @media screen and (min-width: 752px) {
             width: 71px;
             height: 1px;
             background: $title-color;
             display: flex;
+            margin-top: 16px;
         }
 
         @media screen and (min-width: 1264px) {
@@ -149,6 +149,7 @@
             height: 1px;
             background: $title-color;
             display: flex;
+            margin-top: 16px;
         }
 
         @media screen and (min-width: 1264px) {
@@ -160,12 +161,14 @@
         color: $title-color;
         font-size: 16px;
         font-weight: 500;
+        margin-top: 12px;
 
         @media screen and (min-width: 752px) {
             font-size: 32px;
             font-weight: 500;
             display: flex;
             align-items: center;
+            margin-top: 16px;
         }
 
         @media screen and (min-width: 1264px) {
@@ -183,15 +186,18 @@
         font-size: 12px;
         font-weight: 600;
         opacity: 0.6;
+        margin-top: 6px;
 
         @media screen and (min-width: 752px) {
             font-size: 24px;
             font-weight: 600;
+            margin-top: 8px;
         }
 
         @media screen and (min-width: 1264px) {
             font-size: 28px;
             font-weight: 600;
+            margin-top: 4px;
         }
     }
 
