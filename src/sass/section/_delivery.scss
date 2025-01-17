@@ -1,5 +1,13 @@
 .delivery {
-    padding-bottom: 100px;
+    padding-bottom: 32px;
+
+    @media screen and (min-width: 752px) {
+        padding-bottom: 40px; 
+    }
+
+    @media screen and (min-width: 1264px) {
+        padding-bottom: 69px;
+    }
 
     &__box {
         display: flex;

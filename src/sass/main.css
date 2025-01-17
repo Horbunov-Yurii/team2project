@@ -631,7 +631,17 @@ body {
 }
 
 .delivery {
-  padding-bottom: 100px;
+  padding-bottom: 32px;
+}
+@media screen and (min-width: 752px) {
+  .delivery {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1264px) {
+  .delivery {
+    padding-bottom: 69px;
+  }
 }
 .delivery__box {
   display: flex;
@@ -739,6 +749,15 @@ body {
   .delivery .items__text {
     font-size: 32px;
     width: 855px;
+  }
+}
+
+.bgdelivery {
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 752px) {
+  .bgdelivery {
+    padding-bottom: 100px;
   }
 }
 
