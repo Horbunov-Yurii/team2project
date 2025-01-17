@@ -1,0 +1,148 @@
+.backphone {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+
+.model {
+  background-color: $text-color;
+  width: 272px;
+  height: 357px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media screen and (min-width: 752px) {
+    width: 480px;
+    height: 511px;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__btn {
+    background-color: transparent;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    @media screen and (min-width: 752px) {
+      top: 24px;
+      right: 24px;
+    }
+  }
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+    @media screen and (min-width: 752px) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__title {
+    color: $title-color;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    width: 240px;
+    @media screen and (min-width: 752px) {
+      font-size: 32px;
+      width: 416px;
+    }
+  }
+
+  &__text {
+    color: $modal-color;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.2;
+    width: 240px;
+    margin-top: 14px;
+    margin-bottom: 18px;
+
+    @media screen and (min-width: 752px) {
+      width: 416px;
+      font-size: 16px;
+      margin-top: 24px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__lab {
+    color: $modal-color;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    @media screen and (min-width: 752px) {
+      font-size: 14px;
+    }
+  }
+
+  &__input {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.2;
+    width: 240px;
+    height: 35px;
+    padding-left: 12px;
+    outline: none;
+    margin-bottom: 14px;
+    border: 1px solid $input-color;
+
+    @media screen and (min-width: 752px) {
+      width: 416px;
+      height: 49px;
+      font-size: 14px;
+      padding-left: 16px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    background-color: $menu-color;
+    width: 240px;
+    height: 37px;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: $text-color;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top: 10px;
+
+    @media screen and (min-width: 752px) {
+      width: 416px;
+      height: 50px;
+      font-size: 18px;
+      margin-top: 14px;
+    }
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
