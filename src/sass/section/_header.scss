@@ -51,6 +51,17 @@ font-weight: 400;
 line-height: 1.2;
   }
 
+  &__phone {
+    background-color: transparent;
+      @media screen and (min-width: 752px) {
+margin-left: 75px;
+  }
+
+  @media screen and (min-width: 1264px) {
+margin-left: 306px;
+  }
+  }
+
   &__img {
     width: 22px;
 height: 22px;
@@ -58,13 +69,11 @@ height: 22px;
   @media screen and (min-width: 752px) {
 width: 24px;
 height: 24px;
-margin-left: 75px;
   }
 
   @media screen and (min-width: 1264px) {
     width: 28px;
 height: 28px;
-margin-left: 306px;
   }
   }
   
