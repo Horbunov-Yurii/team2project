@@ -34,6 +34,7 @@
         font-size: 24px;
         font-weight: 700;
         line-height: 1.2;
+        animation: animateH1 1s ease-out;
 
         @media screen and (min-width: 752px) {
             font-size: 44px;
@@ -42,6 +43,18 @@
         @media screen and (min-width: 1264px) {
             font-size: 44px;
         }
+
+        @keyframes animateH1 {
+            0% {
+              transform: scale(1);
+            }
+            50% {
+              transform: scale(1.2);
+            }
+            100% {
+              transform: scale(1);
+            }
+          }
     }
 
     &__line {
@@ -67,6 +80,7 @@
 
 
     &__img {
+        animation: photoZoomTilt 1s ease-in-out;
 
         width: 136px;
         height: 155px;
@@ -80,6 +94,18 @@
             width: 600px;
             height: 542px;
         }
+
+        @keyframes photoZoomTilt {
+            0% {
+              transform: scale(1) rotate(0deg);
+            }
+            50% {
+              transform: scale(1.1) rotate(3deg);
+            }
+            100% {
+              transform: scale(1) rotate(0deg);
+            }
+          }
     }
 
     &__bax {
@@ -162,7 +188,7 @@
         font-size: 16px;
         font-weight: 500;
         margin-top: 12px;
-
+        animation: textAppear 0.5s ease-out forwards;
         @media screen and (min-width: 752px) {
             font-size: 32px;
             font-weight: 500;
@@ -177,6 +203,17 @@
             display: flex;
             align-items: center;
         }
+
+        @keyframes textAppear {
+            0% {
+              transform: translateY(10px);
+              opacity: 0;
+            }
+            100% {
+              transform: translateY(0);
+              opacity: 1;
+            }
+          }
     }
 
 
@@ -214,13 +251,24 @@
         border-radius: 38px;
         padding: 10px 35px;
         margin-top: 32px;
-
+        animation: rotateButton 2s ;
         @media screen and (min-width: 752px) {
             font-size: 28px;
             padding: 20px 43px;
             margin-top: 60px;
         }
 
+        @keyframes rotateButton {
+            0% {
+              transform: rotate(0deg);
+            }
+            50% {
+              transform: rotate(180deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }          
+        }
     }
 }
 
