@@ -148,7 +148,7 @@ body {
 .header__button {
   background: none;
   border: transparent;
-  margin-left: 14px;
+  margin-left: 4px;
 }
 @media screen and (min-width: 752px) {
   .header__button {
@@ -204,15 +204,18 @@ body {
 
 .hero {
   padding-top: 44px;
+  padding-bottom: 136px;
 }
 @media screen and (min-width: 752px) {
   .hero {
     padding-top: 38px;
+    padding-bottom: 194px;
   }
 }
 @media screen and (min-width: 1264px) {
   .hero {
     padding-top: 64px;
+    padding-bottom: 193px;
   }
 }
 .hero__bax {
@@ -469,6 +472,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.2;
+  animation: animateH1 1s ease-out;
 }
 @media screen and (min-width: 752px) {
   .store__title {
@@ -478,6 +482,17 @@ body {
 @media screen and (min-width: 1264px) {
   .store__title {
     font-size: 44px;
+  }
+}
+@keyframes animateH1 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 .store__line {
@@ -502,6 +517,7 @@ body {
   }
 }
 .store__img {
+  animation: photoZoomTilt 1s ease-in-out;
   width: 136px;
   height: 155px;
 }
@@ -515,6 +531,17 @@ body {
   .store__img {
     width: 600px;
     height: 542px;
+  }
+}
+@keyframes photoZoomTilt {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(3deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
   }
 }
 @media screen and (min-width: 752px) {
@@ -602,6 +629,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   margin-top: 12px;
+  animation: textAppear 0.5s ease-out forwards;
 }
 @media screen and (min-width: 752px) {
   .store__paragraph {
@@ -618,6 +646,16 @@ body {
     font-weight: 500;
     display: flex;
     align-items: center;
+  }
+}
+@keyframes textAppear {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 .store__text {
@@ -653,12 +691,24 @@ body {
   border-radius: 38px;
   padding: 10px 35px;
   margin-top: 32px;
+  animation: rotateButton 2s;
 }
 @media screen and (min-width: 752px) {
   .store__button {
     font-size: 28px;
     padding: 20px 43px;
     margin-top: 60px;
+  }
+}
+@keyframes rotateButton {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
@@ -756,6 +806,7 @@ body {
   justify-content: center;
   align-items: center;
   line-height: 1.2;
+  animation: numberAppear 0.5s ease-out forwards;
 }
 @media screen and (min-width: 752px) {
   .delivery__text {
@@ -764,12 +815,23 @@ body {
     height: 64px;
   }
 }
+@keyframes numberAppear {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 .delivery .items__text {
   color: #000;
   font-size: 14px;
   font-weight: 500;
   width: 232px;
   line-height: 1.2;
+  animation: deliveryStepAppear 0.5s ease-out forwards;
 }
 @media screen and (min-width: 752px) {
   .delivery .items__text {
@@ -781,6 +843,16 @@ body {
   .delivery .items__text {
     font-size: 32px;
     width: 855px;
+  }
+}
+@keyframes deliveryStepAppear {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -978,8 +1050,6 @@ body {
 }
 .footer__lisst {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 18px;
 }
 @media screen and (min-width: 752px) {
