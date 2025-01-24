@@ -13,6 +13,7 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
+    animation: move 2s linear 1;
 
     @media screen and (min-width: 752px) {
       gap: 32px;
@@ -21,6 +22,14 @@
     @media screen and (min-width: 1264px) {
       gap: 32px;
     }
+    @keyframes move {
+      0% {
+          transform: translateX(0);
+      }
+      100% {
+          transform: translateX(200px);
+      }
+  }
   }
 
   &__tittle {
@@ -28,10 +37,28 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 1.2;
+    animation: bounce 2s ease-out 1;
 
     @media screen and (min-width: 752px) {
       font-size: 44px;
     }
+    @keyframes bounce {
+      0% {
+          transform: translateY(0);
+      }
+      25% {
+          transform: translateY(-50px);
+      }
+      50% {
+          transform: translateY(0);
+      }
+      75% {
+          transform: translateY(-25px);
+      }
+      100% {
+          transform: translateY(0);
+      }
+  }
   }
 
   &__line {
@@ -55,6 +82,8 @@
     line-height: 1.2;
     text-align: center;
     margin-top: 28px;
+    animation: slideAndRotate 3s ease-out 1;
+
 
     @media screen and (min-width: 752px) {
       font-size: 32px;
@@ -64,6 +93,23 @@
     @media screen and (min-width: 1264px) {
       margin-top: 44px;
     }
+    @keyframes slideAndRotate {
+      0% {
+          transform: translateX(0) rotate(0);
+      }
+      25% {
+          transform: translateX(100px) rotate(45deg);
+      }
+      50% {
+          transform: translateX(200px) rotate(90deg);
+      }
+      75% {
+          transform: translateX(100px) rotate(135deg);
+      }
+      100% {
+          transform: translateX(0) rotate(180deg);
+      }
+  }
   }
 
   .btn {
@@ -78,6 +124,7 @@
     margin-right: auto;
     margin-top: 32px;
     padding: 14px 28px;
+    animation: scaleAndBack 2s ease-in-out 1;
 
     @media screen and (min-width: 752px) {
       margin-top: 40px;
@@ -89,6 +136,23 @@
       margin-top: 48px;
       font-size: 28px;
     }
+    @keyframes scaleAndBack {
+      0% {
+          transform: scale(1);
+      }
+      25% {
+          transform: scale(1.2);
+      }
+      50% {
+          transform: scale(1.5);
+      }
+      75% {
+          transform: scale(1.2);
+      }
+      100% {
+          transform: scale(1);
+      }
+  }
   }
 
   &__div {
